@@ -35,11 +35,7 @@ cd MusicApi
 node app.js
 ```
 
-<<<<<<< HEAD
   **方式二: 全局安装**
-=======
-  **方式二: 全局安装**
->>>>>>> 9d23e993b72b2da933db5eedb753d6998f44b9bd
 
 ```bash
 npx NeteaseCloudMusicApi@latest
@@ -47,7 +43,6 @@ npx NeteaseCloudMusicApi@latest
 
 启动成功后，你将看到类似下面的界面：
 
-![serverRunning](https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png)
 <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png" alt="serverRunning" style="width: 33.3%;" />
 
 2. **配置小程序**
@@ -60,7 +55,7 @@ npx NeteaseCloudMusicApi@latest
 ## 📸 项目截图
 
 | 功能 | 截图 |
-| :--: | :--: |
+| :--- | :--- |
 | **登录界面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/phone_login.png" alt="手机号登录" style="width: 33.3%; display: inline-block;" /> <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/qr_code_login.png" alt="二维码登录" style="width: 33.3%; display: inline-block;" /> |
 | **首页** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/index.png" alt="首页" style="width: 33.3%;" /> |
 | **歌单广场** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/musicListSquare.png" alt="歌单广场" style="width: 33.3%;" /> |
@@ -72,6 +67,7 @@ npx NeteaseCloudMusicApi@latest
 | **评论区** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/comment.png" alt="评论区" style="width: 33.3%;" /> |
 | **搜索页** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/search.png" alt="搜索页" style="width: 33.3%;" /> |
 | **视频页** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/video.png" alt="视频页" style="width: 33.3%;" /> |
+
 
 ## 😄 注意事项
 
