@@ -44,6 +44,7 @@ npx NeteaseCloudMusicApi@latest
 启动成功后，你将看到类似下面的界面：
 
 ![serverRunning](https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png)
+<img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png" alt="serverRunning" style="width: 33.3%;" />
 
 2. **配置小程序**
 
@@ -56,17 +57,17 @@ npx NeteaseCloudMusicApi@latest
 
 | 功能         |                             截图                             |
 | :----------- | :----------------------------------------------------------: |
-| **登录界面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/phone_login.png" alt="手机号登录" style="width: 33.3%;" />![二维码登录](https://github.com/California-US/musicMiniProgram/raw/main/docs/qr_code_login.png) |
-| **首页**     | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/index.png) |
-| **歌单广场** | ![歌单广场](https://github.com/California-US/musicMiniProgram/raw/main/docs/musicListSquare.png) |
-| **播放页面** | ![播放页封面](https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_01.png)![播放页歌词](https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_02.png) |
-| **个人中心** | ![个人中心_01](https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_01.png)![个人中心_02](https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_02.png) |
-| **排行榜**   | ![排行榜](https://github.com/California-US/musicMiniProgram/raw/main/docs/ranking.png) |
-| **每日推荐** | ![每日推荐](https://github.com/California-US/musicMiniProgram/raw/main/docs/recommendSong.png) |
-| **视频播放** | ![视频播放](https://github.com/California-US/musicMiniProgram/raw/main/docs/videoPlayer.png) |
-| **评论区**   | ![评论区](https://github.com/California-US/musicMiniProgram/raw/main/docs/comment.png) |
-| **搜索页**   | ![搜索页](https://github.com/California-US/musicMiniProgram/raw/main/docs/search.png) |
-| **视频页**   | ![视频页](https://github.com/California-US/musicMiniProgram/raw/main/docs/video.png) |
+| **登录界面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/phone_login.png" alt="手机号登录" style="width: 33.3%;" /><img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/qr_code__login.png" alt="二维码登录" style="width: 33.3%;" />
+| **首页**     | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/index.png" alt="手机号登录" style="width: 33.3%;" />|
+| **歌单广场** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/musicListSquare.png" alt="歌单广场" style="width: 33.3%;" |
+| **播放页面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_01.png" alt="播放页封面" style="width: 33.3%;" <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_02.png" alt="播放页歌词" style="width: 33.3%;"|
+| **个人中心** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_01.png" alt="个人中心_01" style="width: 33.3%;"<img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_02.png" alt="个人中心_02" style="width: 33.3%;"|
+| **排行榜**   | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/ranking.png" alt="排行榜" style="width: 33.3%;" |
+| **每日推荐** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/recommendSong.png" alt="每日推荐" style="width: 33.3%;"|
+| **视频播放** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/videoPlayer.png" alt="视频播放" style="width: 33.3%;"|
+| **评论区**   | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/comment.png" alt="评论区" style="width: 33.3%;"|
+| **搜索页**   | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/search.png" alt="搜索页" style="width: 33.3%;" |
+| **视频页**   | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/video.png" alt="视频页" style="width: 33.3%;"|
 
 ## 😄 注意事项
 
