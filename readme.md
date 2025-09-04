@@ -25,7 +25,7 @@
 
 1. **启动后端API服务** 
 
-   **方式一: 本地安装(二选一)**
+  **方式一: 本地安装(二选一)**
 
 ```bash
 克隆后端API项目
@@ -35,7 +35,7 @@ cd MusicApi
 node app.js
 ```
 
-​	**方式二: 全局安装**
+​  **方式二: 全局安装**
 
 ```bash
 npx NeteaseCloudMusicApi@latest
