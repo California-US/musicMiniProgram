@@ -2,8 +2,8 @@
 
 > 一个基于网易云音乐API开发的微信小程序音乐播放器
 
-[![GitHub license](https://img.shields.io/github/license/California-US/MusicApi)](https://github.com/California-US/MusicApi)
-[![GitHub stars](https://img.shields.io/github/stars/California-US/MusicApi)](https://github.com/California-US/MusicApi/stargazers)
+[![GitHub license](https://img.shields.io/github/license/California-US/musicMiniProgram)](https://github.com/California-US/musicMiniProgram)
+[![GitHub stars](https://img.shields.io/github/stars/California-US/MusicApi)](https://github.com/California-US/musicMiniProgram/stargazers)
 
 ## ✨ 特性
 
@@ -23,9 +23,9 @@
 
 ### 安装与运行
 
-1. **启动后端API服务** (二选一)
+1. **启动后端API服务** 
 
-   **方式一: 本地安装**
+   **方式一: 本地安装(二选一)**
 
 ```bash
 克隆后端API项目
@@ -43,7 +43,7 @@ npx NeteaseCloudMusicApi@latest
 
 启动成功后，你将看到类似下面的界面：
 
-![image-20250904005449083](C:\Users\California\AppData\Roaming\Typora\typora-user-images\image-20250904005449083.png)
+![serverRunning](https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png)
 
 2. **配置小程序**
 
@@ -58,14 +58,14 @@ npx NeteaseCloudMusicApi@latest
 | :----------- | :----------------------------------------------------------: |
 | **登录界面** | ![手机号登录](https://github.com/California-US/musicMiniProgram/raw/main/docs/phone_login.png)![二维码登录](https://github.com/California-US/musicMiniProgram/raw/main/docs/qr_code_login.png) |
 | **首页**     | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/index.png) |
-| **歌单广场** | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/musicListSquare.png) |
-| **播放页面** | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_01.png)![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_02.png) |
-| **个人中心** | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_01.png)![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_02.png) |
-| **排行榜**   | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/ranking.png) |
-| **每日推荐** | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/recommendSong.png) |
+| **歌单广场** | ![歌单广场](https://github.com/California-US/musicMiniProgram/raw/main/docs/musicListSquare.png) |
+| **播放页面** | ![播放页封面](https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_01.png)![播放页歌词](https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_02.png) |
+| **个人中心** | ![个人中心_01](https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_01.png)![个人中心_02](https://github.com/California-US/musicMiniProgram/raw/main/docs/personal_02.png) |
+| **排行榜**   | ![排行榜](https://github.com/California-US/musicMiniProgram/raw/main/docs/ranking.png) |
+| **每日推荐** | ![每日推荐](https://github.com/California-US/musicMiniProgram/raw/main/docs/recommendSong.png) |
 | **视频播放** | ![视频播放](https://github.com/California-US/musicMiniProgram/raw/main/docs/videoPlayer.png) |
 | **评论区**   | ![评论区](https://github.com/California-US/musicMiniProgram/raw/main/docs/comment.png) |
-| **搜索页**   | ![首页](https://github.com/California-US/musicMiniProgram/raw/main/docs/search.png) |
+| **搜索页**   | ![搜索页](https://github.com/California-US/musicMiniProgram/raw/main/docs/search.png) |
 | **视频页**   | ![视频页](https://github.com/California-US/musicMiniProgram/raw/main/docs/video.png) |
 
 ## 😄 注意事项
