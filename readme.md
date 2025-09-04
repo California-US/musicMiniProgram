@@ -43,7 +43,7 @@ npx NeteaseCloudMusicApi@latest
 
 启动成功后，你将看到类似下面的界面：
 
-<img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png" alt="serverRunning" style="width: 400px;" />
+<img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png" alt="serverRunning" />
 
 2. **配置小程序**
 
