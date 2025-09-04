@@ -35,7 +35,11 @@ cd MusicApi
 node app.js
 ```
 
+<<<<<<< HEAD
   **方式二: 全局安装**
+=======
+  **方式二: 全局安装**
+>>>>>>> 9d23e993b72b2da933db5eedb753d6998f44b9bd
 
 ```bash
 npx NeteaseCloudMusicApi@latest
@@ -56,7 +60,7 @@ npx NeteaseCloudMusicApi@latest
 ## 📸 项目截图
 
 | 功能 | 截图 |
-| :--- | :--- |
+| :--: | :--: |
 | **登录界面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/phone_login.png" alt="手机号登录" style="width: 33.3%; display: inline-block;" /> <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/qr_code_login.png" alt="二维码登录" style="width: 33.3%; display: inline-block;" /> |
 | **首页** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/index.png" alt="首页" style="width: 33.3%;" /> |
 | **歌单广场** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/musicListSquare.png" alt="歌单广场" style="width: 33.3%;" /> |
