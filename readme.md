@@ -1,6 +1,6 @@
 # 🎵 网愈云Music - 微信小程序
 
-> 一个基于网易云音乐API开发的微信小程序音乐播放器
+> 一个基于网易云音乐API开发的微信音乐播放小程序
 
 [![GitHub license](https://img.shields.io/github/license/California-US/musicMiniProgram)](https://github.com/California-US/musicMiniProgram)
 [![GitHub stars](https://img.shields.io/github/stars/California-US/MusicApi)](https://github.com/California-US/musicMiniProgram/stargazers)
@@ -43,7 +43,7 @@ npx NeteaseCloudMusicApi@latest
 
 启动成功后，你将看到类似下面的界面：
 
-<img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png" alt="serverRunning" style="width: 33.3%;" />
+<img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/serverRunning.png" alt="serverRunning" style="width: 400px;" />
 
 2. **配置小程序**
 
