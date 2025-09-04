@@ -1,0 +1,37 @@
+<!-- <page-meta>
+  <navigation-bar></navigation-bar>
+</page-meta> -->
+<view class="recommendSongContainer" bindtouchend="handleTouchEnd">
+  <!-- 头部 -->
+  <view class="header">
+    <view class="title {{isScroll?'titleShow':''}}" style="margin-top:calc({{barHeight}}px);"></view>
+    <image class="{{isScroll?'imageBlur':'blur'}} " src="{{recommendList[0].al.picUrl}}" mode="widthFix" lazy-load></image>
+    <view class="data {{isScroll?'dataHidden':''}}">
+      <text class="day">{{day}}</text>
+      <text class="month">/{{month}}</text>
+    </view>
+  </view>
+  <!-- 列表区域 -->
+  <view class="listContainer">
+    <view class="listHeader">
+      <text>播放全部</text>
+      <text class="changeMore">多选</text>
+    </view>
+    <scroll-view scroll-y="{{isScroll}}" class="listScroll" wx:if="{{recommendList.length!==0}}" style="padding-bottom:2vh">
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" data-index="{{index}}" data-song="{{item.id}}" bindtap="toSongDetail">
+        <image src="{{item.al.picUrl}}" lazy-load></image>
+        <view class="musicInfo">
+          <text class="musicName">{{item.name}}</text>
+          <view class="musicAuthor">
+            <text wx:if="{{item.ar.length<=1}}">{{item.ar[0].name+' - '+item.al.name}}</text>
+            <text wx:else>{{item.ar[0].name}}/{{item.ar[1].name+' - '+item.al.name}}</text>
+          </view>
+        </view>
+        <text class="iconfont icon-gengduo"></text>
+      </view>
+    </scroll-view>
+    <view class="tip" >推荐歌曲列表加载中...</view>
+  </view>
+</view>
+<!-- 底部控制栏 -->
+<bottomControl></bottomControl>

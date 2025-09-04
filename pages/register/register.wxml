@@ -1,0 +1,9 @@
+<view class="container">
+  <image src="/static/images/logo.png"></image>
+  <view class="welcome">有关账号问题请前往网易云官网<text class="tip">https://music.163.com/</text>获取帮助，以便获得本小程序最佳体验！</view>
+  <text>By 网愈云Music</text>
+  <view class="login-section">
+    已有账号?
+    <text bindtap="login">马上登录</text>
+  </view>
+</view>

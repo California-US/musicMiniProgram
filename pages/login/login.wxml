@@ -1,0 +1,52 @@
+<view class="container">
+  <view class="wrapper">
+    <view class="login-logo">
+      <image src="/static/images/logo.png"></image>
+      <view class="welcome">欢迎回来</view>
+    </view>
+
+    <!-- 手机登录部分 - 默认显示 -->
+    <view class="input-content" wx:if="{{!showQR}}">
+      <!-- 手机号码输入 -->
+      <view class="input-label">手机号码</view>
+      <view class="input-container">
+        <view class="area-selector">+86</view>
+        <input type="number" placeholder="请输入手机号码" placeholder-class="input-placeholder" data-type="phone" maxlength="11" value="{{phone}}" bindinput="handleInput" />
+      </view>
+
+      <!-- 验证码输入 - 调整后的结构 -->
+      <view class="input-label">验证码</view>
+      <view class="captcha-container">
+        <view class="captcha-input">
+          <input type="number" placeholder="请输入短信验证码" placeholder-class="input-placeholder" data-type="captcha" maxlength="6" bindinput="handleInput" />
+        </view>
+        <button class="captcha-btn" bindtap="sendCaptcha" disabled="{{isCounting}}">
+          {{isCounting ? countdown + '秒后重试' : '获取验证码'}}
+        </button>
+      </view>
+
+
+      <button class="confirm-btn" bindtap="login">登录</button>
+      <button class="switch-btn" bindtap="toggleQRLogin">切换二维码登录</button>
+    </view>
+
+    <!-- 二维码登录部分 - 同一位置切换显示 -->
+    <view class="qr-content" wx:else>
+      <view class="qr-card">
+        <image wx:if="{{qrCodeImg}}" src="{{qrCodeImg}}" class="qr-image" mode="aspectFit" />
+        <view wx:else class="qr-loading">二维码生成中...</view>
+        <view class="qr-status">{{qrStatus}}</view>
+        <view class="qr-tips">
+          <view>使用<text style="color:#ff6400;font-weight:bold">网易云音乐APP</text>扫码登录</view>
+        </view>
+      </view>
+      <button class="switch-btn" bindtap="toggleQRLogin">返回手机登录</button>
+    </view>
+  </view>
+
+  <!-- 底部注册引导 - 固定在页面底部 -->
+  <view class="register-section">
+    还没有账号?
+    <text bindtap="register" style="color: #ff6400;">马上注册</text>
+  </view>
+</view>

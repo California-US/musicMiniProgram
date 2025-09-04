@@ -1,0 +1,85 @@
+<!-- 开屏动画 -->
+<!-- <view class="start" style="display:{{isStartShow?'':'none'}}">
+  <text class="text">网愈云Music • <text style="font-style:italic">音樂的力量</text></text>
+  <mp-loading show="true"></mp-loading>
+</view> -->
+
+<!-- 主页内容 -->
+<view class="indexContainer">
+  <!-- 搜索框 -->
+  <view class="header">
+    <view class="search" bindtap="toSearch">搜索框</view>
+  </view>
+  <!-- 轮播图区域 -->
+  <swiper class="banners swiper-box" indicator-dots indicator-color='ivory' indicator-active-color='#ff6400' circular="ture" autoplay="ture">
+    <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
+      <image src="{{item.pic}}" mode="widthFix" lazy-load></image>
+      <text class='bannerTitle' style="background-color:{{item.titleColor}}">{{item.typeTitle}}</text>
+    </swiper-item>
+  </swiper>
+
+  <!-- 五个图标导航区域 -->
+  <view class="navContainer">
+    <view class="navItem">
+      <text class="iconfont icon-meirituijian" bindtap="goToRecommend"></text>
+      <text>每日推荐</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-gedan1" bindtap="goToMusicListSquare"></text>
+      <text>歌单</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-ranking" bindtap="goToRanking"></text>
+      <text>排行榜</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont icon-shipin" bindtap="goToVideos"></text>
+      <text>视频</text>
+    </view>
+    <view class="navItem">
+      <text class="iconfont .icon-wode" bindtap="goToPersonal"></text>
+      <text>我的</text>
+    </view>
+  </view>
+  <!-- 推荐歌单区域 -->
+  <view class="commonContainer">
+    <!-- 头部区域 -->
+    <NavHeader title="推荐歌单" bind:getMore="toMoreRecommendMusicList"></NavHeader>
+    <!-- 内容区域 -->
+    <scroll-view class="recommendScroll" enable-flex scroll-x wx:if="{{recommendList.length!==0}}" show-scrollbar="{{false}}">
+      <view class="scrollItem" wx:for="{{recommendList}}" wx:key="id" bindtap="toMusicList" data-musiclistid="{{recommendList[index].id}}">
+        <image src="{{item.picUrl}}" lazy-load></image>
+        <text>{{item.name}}</text>
+      </view>
+    </scroll-view>
+    <view class="commonContainer tip" wx:else>正在加载推荐歌单...</view>
+  </view>
+  <view class="borderLine"></view>
+
+  <!-- 排行榜区域 -->
+  <view class="commonContainer" style="padding-bottom: 12vh">
+    <!-- 头部区域 -->
+    <NavHeader title="排行榜" bind:getMore="goToRanking"></NavHeader>
+    <!-- 内容区域 -->
+    <swiper class="topListSwiper" circular next-margin="50rpx" wx:if="{{topList.length!==0}}" bindchange="getCurrentPage">
+      <swiper-item wx:for="{{topList}}" wx:key="name">
+        <view class="swiperItem">
+          <view class="title">{{item.name}}</view>
+          <view class="musicItem" wx:for="{{item.tracks?item.tracks:''}}" bindtap="toSongDetail" data-song="{{tracks.id}}" wx:key="id" wx:for-item="tracks" wx:for-index="idx">
+            <image src="{{tracks.al.picUrl}}" lazy-load></image>
+            <view class="musicInfo">
+              <text class="musicName">{{tracks.name}}</text>
+              <view class="musicAuthor">
+                <text wx:if="{{tracks.ar.length<=1}}">{{tracks.ar[0].name+' - '+tracks.al.name}}</text>
+                <text wx:else>{{tracks.ar[0].name+'/'+tracks.ar[1].name+' - '+tracks.al.name}}</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </swiper-item>
+    </swiper>
+    <view class="commonContainer tip" wx:else>正在加载排行榜...</view>
+  </view>
+<!-- 底部控制栏 -->
+<bottomControl></bottomControl>
+</view>

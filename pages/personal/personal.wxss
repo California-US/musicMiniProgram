@@ -1,0 +1,210 @@
+page {
+  background-color: #f5f5f5;
+  height: 100%;
+}
+
+
+.personalContainer {
+  width: 100%;
+  /* margin-bottom: 12vh; */
+}
+
+/* 用户背景区域 */
+.personalContainer .user-section {
+  position: relative;
+  height: 520rpx;
+}
+
+.user-section .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.user-info-box {
+  height: 180rpx;
+  display: flex;
+  position: relative;
+  top: 90%;
+  /* background: -webkit-linear-gradient(top, #ffbe92, #ffe1cb, #fff); */
+  background-color: #fff;
+  border-radius: 20rpx;
+  padding: 20rpx;
+  margin: 0 30rpx;
+}
+
+.user-info-box .portrait {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 20rpx;
+}
+
+.logOut {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logOut text {
+  padding-left: 20rpx;
+}
+
+.logIn {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.logOutBtn {
+  text-align: center;
+  color: #ff6400;
+  border-radius: 20rpx;
+  background-color: #fff;
+  
+}
+
+.userDetailBox {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 450rpx;
+  text-align: center;
+}
+
+.userDetailBox .userName {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 36rpx;
+  color: #000;
+}
+
+.userDetailBox .follow text {
+  font-size: 26rpx;
+  color: #777;
+  margin-right: 20rpx;
+}
+
+.userDetailBox .signature {
+  font-size: 26rpx;
+  color: #777;
+}
+
+.cover-container {
+  padding: 0 30rpx;
+  position: relative;
+  background: #f5f5f5;
+  padding-bottom: 20rpx;
+  margin-top: 210rpx;
+}
+
+/* 个人内容区域 */
+.personalContent {
+  margin-top: 40rpx;
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 25rpx;
+}
+
+/* 最近播放记录 */
+.recentPlay {
+  overflow: hidden;
+}
+
+.recentScorll {
+  display: flex;
+  height: 250rpx;
+}
+
+.recentItem {
+  margin-right: 20rpx;
+  text-align: center;
+  margin: 20rpx 20rpx 0 10rpx;
+}
+
+.recentItem text {
+  font-size: 26rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* 设置对齐模式 */
+  -webkit-box-orient: vertical;
+  /* 设置多行行数 */
+  -webkit-line-clamp: 1;
+}
+
+.recentItem image {
+  height: 178rpx;
+  width: 178rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #eee;
+}
+
+/* 歌单列表区域 */
+.listItem {
+  display: flex;
+  width: 100%;
+  margin: 15rpx 10rpx;
+}
+
+.listItem .listCover {
+  height: 108rpx;
+  width: 108rpx;
+  border-radius: 20rpx;
+  border: 2rpx solid #eee;
+}
+
+.listItem .listInfo {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.listItem text {
+  margin: 4rpx;
+}
+
+.listItem .listName {
+  width: 480rpx;
+  font-size: 30rpx;
+  color: #424242;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listItem .listDetail {
+  width: 500rpx;
+  font-size: 26rpx;
+  color: #aaa;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+.title {
+  margin: 10rpx 10rpx 20rpx;
+  font-size: 32rpx;
+  font-weight: 400;
+  color: #000;
+}
+
+.tip {
+  font-size: 26rpx;
+  color: #aaa;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+.listCount {
+  font-size: 24rpx;
+  color: #aaa;
+}

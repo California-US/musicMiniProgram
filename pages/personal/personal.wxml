@@ -1,0 +1,110 @@
+<view class="personalContainer">
+  <!-- 用户背景区域 -->
+  <view class="user-section">
+    <image class="bg" src='{{userInfo.backgroundUrl?userInfo.backgroundUrl:"/static/images/personal/bgImg2.jpg"}}'></image>
+    <view class="user-info-box">
+      <view class="logIn" wx:if="{{userInfo.nickname}}">
+        <image class="portrait" src='{{userInfo.avatarUrl}}' bindtap='previewImage' lazy-load>
+        </image>
+        <view class="userDetailBox">
+          <text class="userName">{{userInfo.nickname}}</text>
+          <view class="follow">
+            <text>{{userDetail[2]+' 关注'}}</text>
+            <text>{{userDetail[3]+' 粉丝'}}</text>
+            <text>{{'Lv.'+userDetail[0]}}</text>
+          </view>
+          <!-- <text class="signature">简介：{{userInfo.signature}}</text> -->
+        </view>
+      </view>
+      <view class="logOut" bindtap="toLogin" wx:else>
+        <image class="portrait" src="/static/images/personal/missing-face.png"></image>
+        <text>登录/注册</text>
+      </view>
+    </view>
+  </view>
+  <view class="cover-container-scroll" style="width: 100%;">
+    <view class="cover-container">
+      <!-- 个人内容区域 -->
+      <view class="personalContent">
+        <!-- 最近播放记录 -->
+        <view class="recentPlay">
+          <text class="title">最近播放</text>
+          <text class="listCount" wx:if="{{userDetail.length!==0}}">{{'(累计听歌'+userDetail[1]+'首)'}}</text>
+          <!-- 一周内有播放记录显示区域 -->
+          <scroll-view class="recentScorll" wx:if="{{recentPlayList.length>0}}" scroll-x enable-flex>
+            <view class="recentItem" wx:for="{{recentPlayList}}" wx:key="index" bindtap="toSongDetail" data-musicid="{{item.song.id}}">
+              <image src="{{item.song.al.picUrl}}?param=178y178" lazy-load></image>
+              <text>{{item.song.name}}</text>
+            </view>
+          </scroll-view>
+          <!-- 一周内无播放记录显示区域 -->
+          <view class="personalContent tip" wx:elif="{{recentPlayList.length==0&&userInfo.nickname}}">
+            "{{userInfo.nickname}}"最近一周暂无播放记录
+          </view>
+          <!-- 登录查看您的播放记录 -->
+          <view wx:else class="tip">登录查看您的播放记录</view>
+        </view>
+      </view>
+
+      <!-- 我喜欢的音乐 -->
+      <view class="personalContent" wx:if="{{myFavoriteList.length!==0&&userInfo.nickname}}">
+        <view class="title">我喜欢的音乐
+          <text class="listCount">{{'(被收藏'+myFavoriteList[0].subscribedCount+'次)'}}</text>
+        </view>
+        <view class="listItem" bindtap="toMusicList" data-musiclistid="{{myFavoriteList[0].id}}">
+          <image class="listCover" src="{{myFavoriteList[0].coverImgUrl}}" lazy-load></image>
+          <view class="listInfo">
+            <text class="listName">{{myFavoriteList[0].name}}</text>
+            <text class="listDetail">{{myFavoriteList[0].trackCount+'首，播放'+myFavoriteList[0].playCount}}次</text>
+          </view>
+        </view>
+      </view>
+      <view class="personalContent tip" wx:elif="{{myFavoriteList.length==0&&userInfo.nickname}}">
+        正在加载"{{userInfo.nickname}}"喜欢的音乐...
+      </view>
+      <view class="personalContent tip" wx:else>登录查看您喜欢的音乐</view>
+
+      <!-- 创建歌单 -->
+      <view class="personalContent created" wx:if="{{createdList.length!==0}}">
+        <view class="title">创建的歌单
+          <text class="listCount">({{createdList.length}}个)</text>
+        </view>
+        <view class="listItem" wx:for="{{createdList}}" wx:key="index" bindtap="toMusicList" data-musiclistid="{{createdList[index].id}}">
+          <image class="listCover" src="{{item.coverImgUrl}}?param108y108" lazy-load></image>
+          <view class="listInfo">
+            <text class="listName">{{item.name}}</text>
+            <view class="listDetail">
+              <text>{{item.trackCount+'首，播放'+(item.playCount>10000?item.playCount/10000+'万次':item.playCount+'次')}}</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="personalContent tip" wx:elif="{{createdList.length==0&&userInfo.nickname}}">
+        正在加载"{{userInfo.nickname}}"创建的音乐...
+      </view>
+      <view class="personalContent tip" wx:else>登录查看您创建的歌单</view>
+
+      <!-- 收藏歌单 -->
+      <view class="personalContent created" wx:if="{{collectedList.length!==0}}">
+        <view class="title">收藏的歌单
+          <text class="listCount">({{collectedList.length+'个'}})</text>
+        </view>
+        <view class="listItem" wx:for="{{collectedList}}" wx:key="index" bindtap="toMusicList" data-musiclistid="{{collectedList[index].id}}">
+          <image class="listCover" src="{{item.coverImgUrl}}" lazy-load></image>
+          <view class="listInfo">
+            <text class="listName">{{item.name}}</text>
+            <text class="listDetail">{{item.trackCount+'首，By '+collectedList[index].creator.nickname}}</text>
+          </view>
+        </view>
+      </view>
+      <view class="personalContent tip" wx:elif="{{collectedList.length==0&&userInfo.nickname}}">
+        正在加载"{{userInfo.nickname}}"收藏的音乐...
+      </view>
+      <view class="personalContent tip" style="margin-bottom: 12vh" wx:else>登录查看您收藏的歌单</view>
+      <!-- 退出登录 -->
+      <view class="personalContent logOutBtn" style="margin-bottom: 12vh" bindtap="logOut" wx:if="{{userInfo.nickname}}">退出登录</view>
+    </view>
+  </view>
+</view>
+<!-- 底部控制栏 -->
+<bottomControl></bottomControl>

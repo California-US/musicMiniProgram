@@ -1,0 +1,110 @@
+page {
+  background-color: #f5f5f5;
+}
+
+/* 导航区域 */
+.navScroll {
+  display: flex;
+  white-space: nowrap;
+  height: 75rpx;
+  font-size: 25rpx;
+  color:#eee;
+  background: -webkit-linear-gradient(top, #ff6400, #ff802b, #ff9047);
+}
+
+.navItem {
+  margin:20rpx 16rpx 0;
+}
+
+.navContent {
+  padding: 5rpx 25rpx;
+  border-radius: 25rpx;
+  line-height: 38rpx;
+}
+
+.active {
+  color:#ffffff;
+  background-color: #ffa061;
+}
+
+.videoContainer .header {
+  display: flex;
+  background: -webkit-linear-gradient(top,#ff9047, #ffa366, #f5f5f5);
+}
+
+.videoContainer .header .search {
+  border:1rpx solid rgb(225, 225, 225);
+  flex: 1;
+  margin:20rpx 50rpx;
+  height: 60rpx;
+  font-size: 26rpx; 
+  text-align: center;
+  line-height: 60rpx;
+  color: #939594;
+  background-color: #edefee;
+  border-radius: 30rpx;
+}
+
+.videoItemContainer{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 30rpx;
+  justify-content: space-between;
+  height: 800rpx;
+}
+
+.videoItem {
+  display: flex;
+  flex-direction: column;
+  width: 48%;
+  height: 280rpx;
+  overflow: hidden;
+  margin-bottom: 15px;
+  background-color: #fff;
+  border-radius: 20rpx;
+  border: 1px solid #eee;
+}
+
+.videoItem image {
+  width: 100%;
+  height: 190rpx;
+  /* height: 300rpx; */
+  /* height: 100%; */
+}
+
+.textContainer {
+  text-align: left;
+  margin: 10rpx;
+  font-size: 26rpx;
+  /* 多行文本溢出隐藏 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* 设置对齐模式 */
+  -webkit-box-orient: vertical;
+  /* 设置多行行数 */
+  -webkit-line-clamp: 2;
+}
+
+.videoListSwiper{
+  /* height: 1000rpx; */
+  height: calc(100vh - 176rpx);
+}
+
+.videoItemContainerScroll{
+  height: 100%;
+}
+
+.tip{
+  width: 100%;
+  margin-top:50rpx;
+  font-size: 28rpx;
+  color:#aaa;
+  text-align: center;
+}
+
+.loadingContainer {
+  width: 100%;
+  text-align: center;
+  margin:20rpx 0 140rpx;
+}

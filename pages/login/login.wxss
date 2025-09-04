@@ -1,0 +1,272 @@
+/* 基础样式 */
+page {
+  background-color: #ffffff;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: #333;
+}
+
+/* 容器样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 60rpx 40rpx;
+  box-sizing: border-box;
+  align-items: center; /* 居中对齐 */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 750rpx; /* 限制最大宽度 */
+}
+
+/* Logo区域 */
+.login-logo {
+  text-align: center;
+  margin-bottom: 80rpx;
+}
+
+.login-logo image {
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.welcome {
+  font-size: 48rpx;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30rpx;
+}
+
+/* 输入区域 */
+.input-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 居中对齐 */
+}
+
+/* 输入项标签 */
+.input-label {
+  font-size: 32rpx;
+  color: #333;
+  margin-bottom: 20rpx;
+  font-weight: 800;
+  align-self: flex-start; /* 左对齐 */
+}
+
+/* 输入项容器 - 带边框 */
+.input-container {
+  height: 90rpx;
+  border: 2rpx solid #e8e8e8;
+  border-radius: 50rpx;
+  padding: 0 30rpx;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30rpx;
+  background: #fff;
+  width: 90%;
+  max-width: 670rpx; 
+}
+
+/* 国家区号选择 */
+.area-selector {
+  font-size: 32rpx;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding-right: 15rpx;
+}
+
+.area-selector::after {
+  content: "▼";
+  font-size: 24rpx;
+  margin-left: 10rpx;
+  color: #999;
+}
+
+/* 输入框样式 */
+.input-container input {
+  flex: 1;
+  height: 90%;
+  font-size: 32rpx;
+  color: #333;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+/* 验证码区域 */
+.captcha-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 670rpx; /* 固定宽度 */
+  /* margin-bottom: 30rpx; */
+}
+
+/* 验证码输入框 */
+.captcha-input {
+  flex: 0 0 50%; /* 占60%宽度 */
+  height: 90rpx;
+  border: 2rpx solid #e8e8e8;
+  border-radius: 50rpx;
+  padding: 0 30rpx;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-right: 20rpx;
+}
+
+.captcha-input input {
+  flex: 1;
+  height: 90rpx;
+  font-size: 32rpx;
+  color: #333;
+  border: none;
+  outline: none;
+}
+
+/* 验证码按钮 */
+.captcha-btn {
+  flex: 0 0 37%; /* 占40%宽度，减去间距 */
+  height: 90rpx;
+  font-size: 32rpx;
+  background: #ff6400;
+  color: #fff;
+  border-radius: 50rpx;
+  border: none;
+  display: flex;
+  align-items: center; /* 垂直居中 */
+  justify-content: center; /* 水平居中 */
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
+  padding: 0;
+  margin: 0; /* 移除外边距 */
+}
+
+/* 按钮容器 */
+.btn-container {
+  width: 90%;
+  max-width: 670rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40rpx;
+}
+
+.captcha-btn:disabled {
+  background: #ccc;
+  color: #999;
+}
+
+/* 登录按钮 */
+.confirm-btn {
+  width: 100%;
+  max-width: 670rpx; /* 与输入框保持一致 */
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  margin-top: 70rpx;
+  background: #ff6400;
+  color: #fff;
+  font-size: 34rpx;
+  font-weight: bold;
+  padding: 0;
+  box-shadow: 0 8rpx 20rpx rgba(255, 80, 0, 0.3);
+}
+
+/* 切换按钮样式 */
+.switch-btn {
+  width: 100%;
+  max-width: 670rpx; /* 与输入框保持一致 */
+  height: 90rpx;
+  line-height: 90rpx;
+  border-radius: 45rpx;
+  margin-top: 40rpx;
+  background: transparent !important;
+  color: #ff6400 !important;
+  border: 2rpx solid #ff6400;
+  font-size: 32rpx;
+  padding: 0;
+  font-weight: bold;
+}
+
+/* 二维码登录区域 */
+.qr-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.qr-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-image {
+  width: 400rpx;
+  height: 400rpx;
+  margin-bottom: 50rpx;
+  background: #fff;
+  border: 1rpx solid #eee;
+  border-radius: 16rpx;
+  padding: 20rpx;
+}
+
+.qr-loading {
+  height: 400rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 32rpx;
+}
+
+.qr-status {
+  height: 50rpx;
+  font-size: 30rpx;
+  /* color: #ff5000; */
+  text-align: center;
+  font-weight: 500;
+}
+
+.qr-tips {
+  text-align: center;
+  font-size: 30rpx;
+  color: #666;
+  line-height: 1.8;
+  margin-top: 20rpx;
+}
+
+/* 底部注册引导 */
+.register-section {
+  position: absolute;
+  bottom: 60rpx;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  padding: 20rpx 0;
+}
+
+.register-section text {
+  color:#ff6400;
+  font-weight: 500;
+  margin-left: 10rpx;
+}
+
+/* 输入框提示文本 */
+.input-placeholder {
+  font-size: 32rpx;
+  color: #999;
+}

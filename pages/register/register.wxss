@@ -1,0 +1,41 @@
+.container {
+  font-size: 120rpx;
+  color: #f8f8f8;
+  text-align: center;
+  padding: 5vh 0;
+}
+
+.container image {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.welcome {
+  font-size: 46rpx;
+  color: #555;
+  text-align: center;
+  padding: 10rpx 60rpx 60rpx;
+}
+
+.login-section {
+  position: absolute;
+  left: 0;
+  bottom:5vh;
+  width: 100%;
+  font-size: 28rpx;
+  color: #606266;
+  text-align: center;
+}
+
+.login-section text {
+  color: #ff6400;
+  margin-left: 10rpx;
+}
+
+.bottom-text {
+  font-size: 30rpx;
+}
+
+.tip{
+  color: #ff6400;
+}
