@@ -57,7 +57,8 @@ npx NeteaseCloudMusicApi@latest
 
 | 功能         |                             截图                             |
 | :----------- | :----------------------------------------------------------: |
-| **登录界面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/phone_login.png" alt="手机号登录" style="width: 33.3%;" /><img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/qr_code__login.png" alt="二维码登录" style="width: 33.3%;" />
+| **登录界面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/phone_login.png" alt="手机号登录" style="width: 33.3%;" />
+<img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/qr_code__login.png" alt="二维码登录" style="width: 33.3%;" />|
 | **首页**     | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/index.png" alt="手机号登录" style="width: 33.3%;" />|
 | **歌单广场** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/musicListSquare.png" alt="歌单广场" style="width: 33.3%;" |
 | **播放页面** | <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_01.png" alt="播放页封面" style="width: 33.3%;" <img src="https://github.com/California-US/musicMiniProgram/raw/main/docs/songDetail_02.png" alt="播放页歌词" style="width: 33.3%;"|
